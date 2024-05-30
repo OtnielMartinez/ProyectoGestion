@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #1f1f47;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #2c2c54;
+    height: 100vh;
+    padding-top: 20px;
+    padding-left: 10px;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-item {
+    margin: 10px 0;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: block;
+    width: 100%;
+    background-color: #44467c; /* Mismo color para todos los botones */
+}
+
+.nav-link:hover,
+.nav-item.nav-link.active {
+    background-color: #9575CD;
+}
+
+.container {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+h1, h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    color: #9575CD;
+}
+
+button {
+    background-color: #9575CD;
+    color: white;
+    border: 1px solid #6A1B9A;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #7E57C2;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #9b4aaf;
+    color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #6d0889;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #9662c6;
+}
+
+.product-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-danger {
+    background-color: #e74c3c;
+}
+
+.btn-danger:hover {
+    background-color: #c0392b;
+}
+
+.btn-primary {
+    background-color: #3498db;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+}
+
+/* Adaptaciones responsivas */
+@media (max-width: 768px) {
+    .navbar {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        padding-left: 0;
+        padding-right: 0;
+        justify-content: space-around;
+    }
+
+    .navbar-nav {
+        flex-direction: row;
+    }
+
+    .nav-item {
+        margin: 5px;
+    }
+
+    .container {
+        margin-left: 0;
+        padding: 10px;
+    }
+}
+.actions {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.actions button,
+.actions .search-form {
+  margin-right: 10px;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+.search-form input {
+  margin-right: 5px;
+}
+.search-form input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #2a034f;
+  border-radius: 5px 0 0 5px;
+  width: 250px;
+  outline: none;
+  margin-top: -15px;
+}
+.actions {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.actions button,
+.actions .search-form {
+  margin-right: 10px;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+.search-form input {
+  margin-right: 5px;
+}
+
+.search-form input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #2a034f;
+  border-radius: 5px 0 0 5px;
+  width: 250px;
+  outline: none;
+}
+
+.search-form button[type="submit"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #2a034f;
+  border-radius: 0 5px 5px 0;
+  background-color: #9575CD;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+.search-form button[type="submit"]:hover {
+  background-color: #7E57C2;
+}
+
+

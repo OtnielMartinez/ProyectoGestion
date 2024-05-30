@@ -1,0 +1,203 @@
+body {
+    font-family: 'Times New Roman', sans-serif;
+    background: #1f1f47;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    min-height: 100vh;
+    color: #fff;
+}
+.navbar {
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 0 8px 8px 0; 
+    text-align: center;
+    color: #fff;
+    height: 93vh; 
+    width: 4%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+        }
+.navbar div {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+.navbar img {
+    width: 50px; 
+    height: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+        }
+.navbar div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+.pink-container {
+    background-color: #1d0275;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #b101f6;
+    width: 90%;
+    margin: 0 auto;
+        }
+
+h2 {
+    margin: 0;
+    font-size: 24px;
+        }
+
+.error-message {
+    background-color: #ff4d4d;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+        }
+
+.action-link {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+        }
+
+.action-link img {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+        }
+
+.action-link img:hover {
+    transform: scale(1.1);
+        }
+
+.action-link span {
+    display: block;
+    font-size: 14px;
+    color: #CA2EAD;
+    margin-top: 8px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+        }        
+.modal-content {
+            background-color: rgb(71, 7, 117);
+            padding: 2em;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(221, 7, 7, 0.1);
+        }
+        
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 1.5em;
+            cursor: pointer;
+        }
+        
+        button {
+            background-color: #7018c2;
+            color: white;
+            border: none;
+            padding: 0.5em 1em;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        
+        button:hover {
+            background-color: #2fd345;
+            transform: translateY(-2px);
+        }
+        
+        input[type="date"],
+        input[type="time"],
+        select {
+            width: 100%;
+            padding: 0.5em;
+            margin: 0.5em 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(138, 14, 187, 0.1);
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        input[type="date"]:focus,
+        input[type="time"]:focus,
+        select:focus {
+            border-color: #c2185b;
+            box-shadow: 0 0 8px rgba(194, 24, 91, 0.5);
+        }
+
+        .action-link div {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .services-container {
+            display: flex;
+            flex-wrap: wrap;
+            
+            align-items: center;
+            gap: 1em;
+            width: 80%; 
+            margin-top: 90px; 
+            margin-bottom: 90px; 
+            position: absolute;
+            left: 230px; 
+            top: 100px;
+        }
+
+.service-box {
+    background-color: #8F60F4;
+    width: 250px;
+    padding: 1em;
+    flex: 1 1 250px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.service-box img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.service-box h3 {
+    color: #07000f;
+}

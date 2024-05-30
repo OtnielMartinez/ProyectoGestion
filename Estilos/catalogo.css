@@ -1,0 +1,212 @@
+@import url('http://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #1f1f47;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.header {
+    background-color: #673AB7;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, .37);
+    border: 1px solid rgba(255, 255, 255, .18);
+    border-radius: 0 0 20px 20px;
+    margin-bottom: 20px;
+
+}
+
+.header h2 {
+    font-size: 1.8em;
+    margin-bottom: 0;
+}
+
+.header button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #9575CD;
+    color: white;
+    border: 1px solid #6A1B9A;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.header button:hover {
+    background-color: #7E57C2;
+}
+
+.catalogo-container {
+    margin-left: 170px; /* Ancho de la navbar */
+    width: calc(80% - 170px); /* Ancho del contenido menos el margen de la navbar */
+}
+
+.producto-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px rgba(31, 38, 135, .37);
+    border: 1px solid rgba(255, 255, 255, .18);
+    border-radius: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    background-color: #22042a; /* Color de fondo de la tabla */
+}
+
+.producto-table th, .producto-table td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+}
+
+.producto-table th {
+    background: rgba(255, 255, 255, .1);
+    color: #fff;
+}
+
+
+.producto-table tbody tr:nth-child(even) {
+    background-color: #3b0443;
+}
+
+.producto-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.carrito-container {
+    margin-left: 170px; /* Ancho de la navbar */
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px rgba(31, 38, 135, .37);
+    border: 1px solid rgba(255, 255, 255, .18);
+    border-radius: 20px;
+    padding: 20px;
+    width: calc(80% - 170px); /* Ancho del contenido menos el margen de la navbar */
+}
+
+.carrito-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.carrito-table th, .carrito-table td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+}
+
+.carrito-table th {
+    background-color: #3b0443;
+    color: white;
+}
+
+.carrito-table tbody tr:nth-child(even) {
+    background-color: #570164;
+}
+
+.carrito-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.carrito-total {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.carrito-container p {
+    margin-top: 10px;
+}
+
+.btn-link {
+    padding: 8px 16px;
+    background: #a25cc2;
+    color: #fff;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-link:hover {
+    background-color: #9336d8;
+}
+
+.boton-actualizar,
+.boton-comprar {
+    background-color: #9575CD; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: 1px solid #6A1B9A; /* Borde */
+    padding: 10px 20px; /* Espaciado alrededor del texto */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor al pasar el ratón */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra */
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+}
+
+.boton-actualizar:hover,
+.boton-comprar:hover {
+    background-color: #7E57C2; /* Color de fondo al pasar el ratón */
+}
+/* Estilos generales para los enlaces */
+.btn-link {
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Estilo específico para el enlace de agregar */
+.btn-link.agregar {
+    background-color: #4CAF50; /* Verde */
+}
+
+.btn-link.agregar:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Estilo específico para el enlace de eliminar */
+.btn-link.eliminar {
+    background-color: #f44336; /* Rojo */
+}
+
+.btn-link.eliminar:hover {
+    background-color: #e53935;
+    transform: scale(1.05);
+}
+/* Estilos generales para los enlaces */
+.btn-link {
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Estilo específico para el enlace de limpiar */
+.btn-link.limpiar {
+    background-color: #ff9800; /* Naranja */
+}
+
+.btn-link.limpiar:hover {
+    background-color: #fb8c00;
+    transform: scale(1.05);
+}
